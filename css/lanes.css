@@ -1,0 +1,87 @@
+/**
+* Grid scaffolding
+*/
+
+.container {
+  max-width: 1000px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+
+.row:before, .row:after {
+  content: " ";
+  display: table;
+}
+
+.row:after {
+  clear: both;
+}
+
+.column, .columns {
+  width: 100%;
+  float: left;
+  box-sizing: border-box;
+}
+
+.column:first-child, .columns:first-child {
+  margin-left: 0;
+}
+
+.column.centered, .columns.centered {
+  float: none;
+  clear: both;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 550px) {
+
+  .container { width: 100%; }
+
+  .column, .columns { margin-left: 2.0408163265306123%; }
+
+  .one.column,
+  .one.columns          { width: 6.462585034013606%; }
+  .two.columns          { width: 14.965986394557824%; }
+  .three.columns        { width: 23.46938775510204%; }
+  .four.columns         { width: 31.97278911564626%; }
+  .five.columns         { width: 40.47619047619048%; }
+  .six.columns          { width: 48.97959183673469%; }
+  .seven.columns        { width: 57.482993197278915%; }
+  .eight.columns        { width: 65.98639455782313%; }
+  .nine.columns         { width: 74.48979591836735%; }
+  .ten.columns          { width: 82.99319727891158%; }
+  .eleven.columns       { width: 91.49659863945578%; }
+  .twelve.columns       { width: 100%; margin-left: 0;  }
+
+  /**
+  * Column Offsets
+  */
+
+  .offset-by-one.column,
+  .offset-by-one.columns       { margin-left: 8.503401360544219%; }
+  .offset-by-two.column,
+  .offset-by-two.columns       { margin-left: 17.006802721088437%; }
+  .offset-by-three.column,
+  .offset-by-three.columns     { margin-left: 25.510204081632654%; }
+  .offset-by-four.column,
+  .offset-by-four.columns      { margin-left: 34.013605442176875%; }
+  .offset-by-five.column,
+  .offset-by-five.columns      { margin-left: 42.51700680272109%; }
+  .offset-by-six.column,
+  .offset-by-six.columns       { margin-left: 51.0204081632653%; }
+  .offset-by-seven.column,
+  .offset-by-seven.columns     { margin-left: 59.523809523809526%; }
+  .offset-by-eight.column,
+  .offset-by-eight.columns     { margin-left: 68.02721088435375%; }
+  .offset-by-nine.column,
+  .offset-by-nine.columns      { margin-left: 76.53061224489797%; }
+  .offset-by-ten.column,
+  .offset-by-ten.columns       { margin-left: 85.0340136054422%; }
+  .offset-by-eleven.column,
+  .offset-by-eleven.columns    { margin-left: 93.5374149659864%; }
+}
