@@ -139,7 +139,9 @@ nav a:hover {
   transform: translateY(-50%);
 }
 
-.intro {}
+.container {
+  padding-bottom: 50px;
+}
 
 .intro-container {
   transform: translate(0%, 75%);
@@ -196,6 +198,11 @@ nav a:hover {
   border-radius: 50%;
 }
 
-.img-opasity:hoverstate {
-  background-color: black;
+.imagehov {
+  opacity: 1;
+  transition: .3s ease;
+}
+
+.imagehov:hover {
+  opacity: 0.5;
 }
