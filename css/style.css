@@ -3,17 +3,26 @@
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
-  color: white;
-  background: rgb(181, 177, 177);
-  background: linear-gradient(180deg, rgba(181, 177, 177, 1) 10%, rgba(119, 191, 227, 1) 30%, rgba(181, 177, 177, 1) 70%);
+  color: black;
+  background: white;
   text-decoration: none;
   line-height: 24px;
+  outline: none;
 }
 
 header {
   position: fixed;
   z-index: 10;
   width: 100%;
+  background-color: rgb(255, 255, 255, 15%);
+}
+
+#portfolio {
+  height: 1500px;
+}
+
+.projects {
+  display: none;
 }
 
 .image1 {
@@ -33,7 +42,7 @@ header {
   top: 30px;
   left: 30px;
   font-size: 42px;
-  color: white;
+  color: black;
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
   display: inline-block;
@@ -44,7 +53,7 @@ h1 {
   top: 30px;
   left: 30px;
   font-size: 42px;
-  color: white;
+  color: black;
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
   display: inline-block;
@@ -82,7 +91,7 @@ nav {
 
 nav a {
   text-decoration: none;
-  color: white;
+  color: black;
   padding: 20px;
 }
 
@@ -91,8 +100,9 @@ nav a:hover {
 }
 
 .into-text {
-  font-size: 24px;
+  font-size: 22px;
   margin-bottom: 20px;
+  margin-top: 8px;
 }
 
 .p2 {
@@ -173,6 +183,10 @@ nav a:hover {
   border-radius: 50%;
 }
 
+.primaryImg {
+  border-radius: 50%;
+}
+
 .row {
   padding-bottom: 25px;
 }
@@ -194,15 +208,15 @@ nav a:hover {
 }
 
 .email:hover, .phone:hover, .linkedin:hover {
-  background-color: black;
+  background-color: grey;
   border-radius: 50%;
 }
 
 .imagehov {
   opacity: 1;
-  transition: .3s ease;
+  transition: .5s ease;
 }
 
 .imagehov:hover {
-  opacity: 0.5;
+  opacity: 0.7;
 }
