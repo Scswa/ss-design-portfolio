@@ -14,11 +14,11 @@ header {
   position: fixed;
   z-index: 10;
   width: 100%;
-  background-color: rgb(255, 255, 255, 15%);
+  background-color: rgb(255, 255, 255, 20%);
 }
 
 #portfolio {
-  height: 1500px;
+  height: 1500;
 }
 
 .projects {
@@ -100,9 +100,13 @@ nav a:hover {
 }
 
 .into-text {
-  font-size: 22px;
-  margin-bottom: 20px;
-  margin-top: 8px;
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+p {
+  line-height: 30px;
 }
 
 .p2 {
@@ -218,5 +222,37 @@ nav a:hover {
 }
 
 .imagehov:hover {
-  opacity: 0.7;
+  opacity: 0.5;
+}
+
+/*  */
+.fade-in {
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.cv-button {
+  padding: 8px;
+  margin-top: 5px;
+  background-color: white;
+  font-size: 14px;
+  width: 150px;
+}
+
+.cv-button:hover {
+  background-color: black;
+  color: white;
 }
