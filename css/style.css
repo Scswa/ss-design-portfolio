@@ -18,7 +18,7 @@ header {
 }
 
 #portfolio {
-  height: 1900px;
+  height: 2000px;
 }
 
 .projects {
@@ -62,7 +62,7 @@ h1 {
 
 h2 {
   text-align: center;
-  font-size: 32px;
+  font-size: 26px;
   font-family: "Open sans", sans-serif;
   padding-bottom: 10px;
 }
@@ -197,7 +197,7 @@ p {
 
 .email, .phone, .linkedin {
   font-size: 40px;
-  padding: 30px;
+  padding: 15px;
   margin-top: 30px;
   margin-left: 50px;
   margin-right: 50px;
