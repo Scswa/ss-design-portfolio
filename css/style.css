@@ -18,7 +18,7 @@ header {
 }
 
 #portfolio {
-  height: 1500;
+  height: 1900px;
 }
 
 .projects {
@@ -225,7 +225,6 @@ p {
   opacity: 0.5;
 }
 
-/*  */
 .fade-in {
   opacity: 1;
   animation-name: fadeInOpacity;
@@ -246,10 +245,12 @@ p {
 
 .cv-button {
   padding: 8px;
-  margin-top: 5px;
+  margin-top: 10px;
   background-color: white;
-  font-size: 14px;
+  font-size: 16px;
   width: 150px;
+  transition: 0.5s ease;
+  cursor: pointer;
 }
 
 .cv-button:hover {
