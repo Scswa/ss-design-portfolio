@@ -17,8 +17,10 @@ header {
   background-color: rgb(255, 255, 255, 20%);
 }
 
-#portfolio {
-  height: 2000px;
+.intro {
+  display: flex;
+  align-items: center;
+  padding: 0;
 }
 
 .projects {
@@ -158,7 +160,6 @@ p {
 }
 
 .intro-container {
-  transform: translate(0%, 75%);
   display: flex;
   align-items: center;
 }
@@ -246,7 +247,8 @@ p {
 .cv-button {
   padding: 8px;
   margin-top: 10px;
-  background-color: white;
+  background-color: black;
+  color: white;
   font-size: 16px;
   width: 150px;
   transition: 0.5s ease;
@@ -254,22 +256,63 @@ p {
 }
 
 .cv-button:hover {
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1050px) {
   header {
     position: absolute;
   }
 
-  logo {
+  .container {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    position: static;
+    text-align: center;
+  }
+
+  #about {
+    height: auto;
+  }
+
+  .scroll-effect {
+    height: auto;
+  }
+
+  .intro-container {
+    display: block;
+  }
+
+  .fade-in {
+    text-align: center;
+    padding: 20px;
+  }
+
+  div.six.columns {
+    margin-bottom: 20px;
+  }
+
+  .logo {
+    top: 0;
+    left: 0;
+    width: 100%;
     font-size: 28px;
+    text-align: center;
   }
 
   nav {
     position: static;
+    display: flex;
+    justify-content: center;
     font-size: 15px;
+    float: none;
+    padding: 0;
+    width: 100%;
   }
 
   h1 {
@@ -286,7 +329,21 @@ p {
   }
 
   .cv-button {
-    padding: 0px;
-    margin-top: 0px;
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+  .container {
+    margin-right: auto;
+    padding-bottom: 0;
+  }
+
+  .email, .phone, .linkedin {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .contact-me {
+    padding: 50px;
   }
 }
