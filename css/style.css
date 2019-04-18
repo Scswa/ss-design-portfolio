@@ -52,7 +52,7 @@ header {
 h1 {
   top: 30px;
   left: 30px;
-  font-size: 42px;
+  font-size: 32px;
   color: black;
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
@@ -256,4 +256,37 @@ p {
 .cv-button:hover {
   background-color: black;
   color: white;
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    position: absolute;
+  }
+
+  logo {
+    font-size: 28px;
+  }
+
+  nav {
+    position: static;
+    font-size: 15px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .into-text {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 12px;
+    line-height: none;
+  }
+
+  .cv-button {
+    padding: 0px;
+    margin-top: 0px;
+  }
 }
