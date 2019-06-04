@@ -1,1 +1,1 @@
-# scs-design-portfolio
+# ss-design-portfolio
