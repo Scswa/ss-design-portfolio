@@ -124,7 +124,7 @@ document.addEventListener("scroll", function() {
   let portfolioDistance = $(".projects").offset().top;
   let distanceFromTop = window.scrollY;
 
-  if (distanceFromTop > 300) {
+  if (distanceFromTop > 100) {
     $(".projects").fadeIn("slow");
   }
 });
